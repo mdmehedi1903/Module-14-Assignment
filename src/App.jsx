@@ -8,6 +8,8 @@ import ServicePage from './Pages/ServicePage';
 import ProjectPage from './Pages/ProjectPage';
 import TestimonialPage from './Pages/TestimonialPage';
 import Subscribe from './Components/Subscribe';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="/service" element={<ServicePage />} />
           <Route path="/project" element={<ProjectPage />} />
           <Route path="/testimonial" element={<TestimonialPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Subscribe/>
         <Footer />

@@ -5,8 +5,11 @@
 }
 
 
-.active-item {
-    text-decoration: underline;
-    color: green;
-  }
+nav a.active {
+    font-weight: bold !important;
+    color: #f55f1d;
+}
 
+.pending-item {
+    font-weight: normal !important;
+}

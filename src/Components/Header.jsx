@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/img/DesignAGENCY.png'
 import { Navbar, Container, Nav, Button } from 'react-bootstrap'; 
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -30,8 +30,12 @@ const Header = () => {
                             <NavLink to='/testimonial' style={navLinkStyle}>Testimonial</NavLink>
                         </Nav>
                         <Nav className="ms-auto">
-                            <Button variant="outline-success" className="me-2">Login</Button>
-                            <Button variant="danger">Register</Button>
+                            <Link  className="me-2" to="/login">
+                                <Button className='me-2' variant="outline-success">Login</Button>
+                            </Link>
+                            <Link to="/register">
+                                <Button variant="danger">Register</Button>
+                            </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
