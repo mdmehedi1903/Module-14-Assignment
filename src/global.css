@@ -1,0 +1,12 @@
+.footer-logo {
+    max-width: 160px; 
+    height: auto;
+
+}
+
+
+.active-item {
+    text-decoration: underline;
+    color: green;
+  }
+
